@@ -33,7 +33,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
         if(trailerUrl){
             setTrailerUrl('');
         }else{
-            movieTrailer(movie?.name || "")
+            movieTrailer(movie?.title || movie?.name || "")
             .then(url =>{
                 // https://www.youtube.com/watch?v=XtMThy8QKqU
                 const urlParams = new URLSearchParams(new URL(url).search);
@@ -52,9 +52,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
                     <img 
                     key={movie.id}
                     onClick ={()=> handleClick(movie)}
-                    className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+                    className={`${isLargeRow ? "row__poster row__posterLarge" : "row__poster"}`}
                     src={`${base_url}${
-                        isLargeRow ? movie.poster_path: movie.backdrop_path}`} alt={movie.name} />
+                        isLargeRow ? movie.poster_path: movie.backdrop_path}`} alt={movie.title||movie.name} />
                 ))}
             </div>
              {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
