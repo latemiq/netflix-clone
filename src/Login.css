@@ -1,0 +1,109 @@
+.login {
+    min-height: 100vh;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/d615dd28-a1ac-4a03-995a-022d24e7b367/web/PL-pl-20251124-TRIFECTA-perspective_0b8799be-7443-48e5-a2de-86cad384fd75_large.jpg") center / cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.login__nav {
+    padding: 20px 3rem;
+}
+
+.login__logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.login__box {
+    background: rgba(0, 0, 0, 0.75);
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 60px 40px;
+    border-radius: 4px;
+}
+
+.login__box h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.login__box form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+.login__submit {
+    width: 100%;
+    background: #e50914;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login__submit:hover {
+    background: #f40612;
+}
+
+.login__divider {
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+.login__code {
+    width: 100%;
+    background: #ffffff20;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login__code:hover {
+    background: #ffffff35;
+}
+
+.login__forgot {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 14px;
+    color: #fff;
+}
+
+.login__remember {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    font-size: 0.9rem;
+}
+
+.login__new {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.login__new span {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login__captcha {
+    opacity: 0.6;
+    margin-top: 12px;
+    font-size: 0.8rem;
+}
+
